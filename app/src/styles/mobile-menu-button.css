@@ -1,0 +1,22 @@
+.mobile-menu-btn {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: 4rem;
+  outline: none;
+  position: relative;
+  width: 4rem;
+}
+
+.mobile-menu-bar, .mobile-menu-btn::after, .mobile-menu-btn::before {
+  background-color: var(--dark-orange);
+  border-radius: 0.25rem;
+  content: '';
+  display: block;
+  height: 0.5rem;
+  margin: 0.5rem 0;
+  transition: 0.4s;
+  width: 100%;
+}
