@@ -1,0 +1,1 @@
+export const MOBILE_DEVICE_MAX_WIDTH_IN_PX = 721;
