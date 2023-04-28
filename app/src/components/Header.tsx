@@ -1,11 +1,14 @@
 import Navbar from './Navbar';
-
+import MobileNavbar from './MobileNavbar';
 import '../styles/header.css';
 
-export default function Header() {
+type HeaderProps = { isMobileDevice: boolean };
+
+export default function Header({ isMobileDevice }: HeaderProps) {
   return (
     <header className="header-container">
-      <Navbar />
+      {!isMobileDevice && <Navbar />}
+      {isMobileDevice && <MobileNavbar />}
     </header>
   );
 }
