@@ -1,25 +1,41 @@
-import { linkOptions } from '../utils/constants/link';
+import { useRef, useState } from 'react';
 
+import AsideMenu from './AsideMenu';
+import { logo } from '../utils/logo';
+import { useOutsideClick } from '../hooks/useOutsideClick';
 import '../styles/mobile-navbar.css';
 
-export default function MobileNavbar({ mobileClass }: { mobileClass: string }) {
+export default function MobileNavbar() {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+  const navRef = useRef(null);
+  const menuClass = showMenu ? 'is-active' : '';
+
+  function handleOutsideClick() {
+    setShowMenu(false);
+  }
+
+  useOutsideClick(navRef, handleOutsideClick);
+
   return (
-    <aside className={`mobile-navbar-container ${mobileClass}`}>
-      <nav className="mobile-navbar-link-container">
-        {linkOptions.map((link) => (
-          <a href={link.href} key={link.href} className="mobile-link">
-            {link.text}
-          </a>
-        ))}
-        <a
-          href="https://google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mobile-link mobile-resume-link"
-        >
-          Currículo
+    <>
+      <nav className={`mobile-navbar-container ${menuClass}`} ref={navRef}>
+        <a href="/" className="mobile-navbar-logo-link">
+          <img
+            src={logo.src}
+            alt={logo.alt}
+            title="logo"
+            className="mobile-navbar-logo-icon"
+          />
         </a>
+        <button
+          type="button"
+          className={`mobile-navbar-btn ${menuClass}`}
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <div className={`mobile-navbar-menu-bar ${menuClass}`}></div>
+        </button>
       </nav>
-    </aside>
+      {showMenu && <AsideMenu menuProps={{ menuClass }} />}
+    </>
   );
 }
