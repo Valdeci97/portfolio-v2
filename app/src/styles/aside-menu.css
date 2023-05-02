@@ -1,5 +1,6 @@
 .aside-menu-container {
-  background-color: var(--dark-grey);
+  background-color: var(--aside-navbar-bg);
+  backdrop-filter: blur(10rem);
   display: flex;
   height: 100vh;
   right: 100%;
@@ -14,7 +15,7 @@
 
 .aside-menu-link-container {
   align-items: center;
-  background-color: var(--dark-grey);
+  background-color: var(--aside-navbar-bg);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,15 +24,15 @@
 }
 
 .aside-menu-link {
-  color: var(--light-orange);
+  color: var(--light-grey);
   font-size: 2rem;
   text-decoration: none;
 }
 
 .resume-link {
-  border: solid var(--dark-orange) 2px;
+  border: solid var(--smoke-white) 2px;
   border-radius: var(--default-border-radius);
-  color: var(--dark-orange);
+  color: var(--smoke-white);
   padding: 1.25rem;
 }
 
@@ -52,11 +53,15 @@
   height: 3rem;
 }
 
+.aside-menu-svg {
+  height: 3rem;
+  width: 3rem;
+}
+
 @media (hover: hover) {
   .aside-menu-link:hover {
-    color: var(--dark-orange);
+    color: var(--smoke-white);
     cursor: pointer;
-    opacity: 0.7;
   }
 
   .aside-menu-social-list-icon:hover {
@@ -67,6 +72,6 @@
 
 @media (hover: none) {
   .aside-menu-link {
-    color: var(--dark-orange);
+    color: var(--smoke-white);
   }
 }

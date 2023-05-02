@@ -27,7 +27,10 @@ export default function AsideMenu({ menuProps }: AsideMenuProps) {
         <ul className="aside-menu-social-list-container">
           {icons.map((icon) => (
             <li key={icon.url} className="aside-menu-social-list-item">
-              <SVGIcon iconProps={{ ...icon }} />
+              <SVGIcon
+                iconProps={{ ...icon }}
+                componentClass="aside-menu-svg"
+              />
             </li>
           ))}
         </ul>
