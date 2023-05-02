@@ -1,0 +1,25 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  height: 100vh;
+  padding-top: var(--header-height);
+}
+
+.home-introduction {
+  color: var(--smoke-white);
+  height: 2rem;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.home-host-name {
+  color: var(--light-grey);
+  font-size: 5rem;
+}
+
+.home-dev-stack {
+  color: var(--smoke-white);
+  font-size: 2rem;
+}
