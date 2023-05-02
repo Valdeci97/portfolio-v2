@@ -29,15 +29,15 @@
 }
 
 .navbar-link-common {
-  color: var(--light-orange);
+  color: var(--light-grey);
   font-size: 1.5rem;
   text-decoration: none;
 }
 
 .navbar-resume-link {
-  border: solid var(--dark-orange) 2px;
+  border: solid var(--smoke-white) 2px;
   border-radius: var(--default-border-radius);
-  color: var(--dark-orange);
+  color: var(--smoke-white);
   padding: 1.25rem;
 }
 
@@ -66,13 +66,13 @@
 
 @media (hover: hover) {
   .navbar-link-common:hover {
-    color: var(--dark-orange);
+    color: var(--smoke-white);
   }
 }
 
 @media (hover: none) {
   .navbar-link-common {
-    color: var(--dark-orange);
+    color: var(--smoke-white);
   }
 }
 

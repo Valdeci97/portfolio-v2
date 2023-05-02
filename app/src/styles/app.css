@@ -1,0 +1,9 @@
+.pages-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  width: 80%;
+}

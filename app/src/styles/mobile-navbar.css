@@ -26,7 +26,7 @@
 }
 
 .mobile-navbar-menu-bar, .mobile-navbar-btn::after, .mobile-navbar-btn::before {
-  background-color: var(--dark-orange);
+  background-color: var(--smoke-white);
   border-radius: 0.25rem;
   content: '';
   display: block;
