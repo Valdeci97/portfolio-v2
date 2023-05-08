@@ -6,3 +6,8 @@
   top: 0;
   width: 100%;
 }
+
+.hide-header {
+  background: var(--dark-blue);
+  backdrop-filter: blur(10rem);
+}
