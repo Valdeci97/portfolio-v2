@@ -1,35 +1,5 @@
 import { RefObject } from 'react';
-// import { RefHookProps } from '../@types/RefHookProps';
 import useEventListener from './useEventListener';
-
-// type RefClickProps = {
-//   hookProps: RefHookProps;
-// };
-
-// export function useRefClick({ hookProps }: RefClickProps) {
-//   const handleRefClick = useCallback(
-//     (event: MouseEvent) => {
-//       const node = event.target as Node;
-//       if (hookProps.ref.current && hookProps.ref.current?.contains(node)) {
-//         console.log(hookProps.ref.current);
-//         console.log(!hookProps.ref.current?.contains(node));
-//         return;
-//       }
-//       console.log(event);
-//       hookProps.stateHandler(false);
-//     },
-//     [hookProps],
-//   );
-
-//   useEffect(() => {
-//     document.addEventListener('click', handleRefClick, true);
-//     return () => {
-//       document.removeEventListener('click', handleRefClick, true);
-//     };
-//   });
-
-//   return { ref: hookProps.ref };
-// }
 
 export function useOutsideClick<T extends HTMLElement = HTMLElement>(
   ref: RefObject<T>,
