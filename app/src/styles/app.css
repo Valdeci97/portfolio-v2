@@ -7,3 +7,28 @@
 .main-container {
   width: 80%;
 }
+
+@media screen and (min-width: 721px) and (max-width: 840px) {
+  .pages-container {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 841px) and (max-width: 920px) {
+  .pages-container {
+    margin-left: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 921px) and (max-width: 1080px) {
+  .pages-container {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1200px) {
+  .pages-container {
+    margin-left: 1.5rem;
+  }
+
+}

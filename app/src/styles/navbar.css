@@ -70,12 +70,6 @@
   }
 }
 
-@media (hover: none) {
-  .navbar-link-common {
-    color: var(--smoke-white);
-  }
-}
-
 @media screen and (max-width: 720px) {
   .navbar-link-container {
     display: none;

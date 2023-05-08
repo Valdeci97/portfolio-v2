@@ -1,12 +1,8 @@
 svg {
-  stroke: var(--smoke-white);
+  stroke: var(--light-grey);
 }
 
 @media (hover: hover) {
-  svg {
-    stroke: var(--light-grey);
-  }
-
   svg:hover {
     stroke: var(--smoke-white);
   }
