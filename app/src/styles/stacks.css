@@ -1,0 +1,37 @@
+.list-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50%, 10rem));
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+.list-item {
+  color: var(--light-grey);
+  font-size: 1.5rem;
+}
+
+.list-item::before {
+  color: var(--smoke-white);
+  content: '\00BB';
+  display: inline-block;
+  margin-left: -1.5rem;
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 360px) {
+  .list-container {
+    grid-template-columns: repeat(2, minmax(70%, 10rem));
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 440px) {
+  .list-container {
+    grid-template-columns: repeat(2, minmax(60%, 10rem));
+  }
+}
+
+@media screen and (min-width: 841px) and (max-width: 920px) {
+  .list-item {
+    font-size: 1.35rem;
+  }
+}
