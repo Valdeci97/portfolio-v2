@@ -1,0 +1,144 @@
+.about-container {
+  height: 100vh;
+  padding-top: var(--header-height);
+}
+
+.about-title {
+  color: var(--light-grey);
+  font-size: 2.75rem;
+}
+
+.about-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-content {
+  width: 80%;
+}
+
+.inner-content-text {
+  color: var(--smoke-white);
+  font-size: 1.6rem;
+  margin: 1.25rem 0;
+  width: 90%;
+}
+
+.profile-picture {
+  align-self: center;
+  display: flex;
+  justify-content: end;
+  height: 25rem;
+  width: 20%;
+}
+
+.picture {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+@media screen and (max-width: 720px) {
+  .about-container {
+    /* background-color: blue; */
+    height: unset;
+    min-height: 100vh;
+  }
+
+  .about-content-container {
+    flex-direction: column;
+  }
+
+  .inner-content {
+    width: 100%;
+  }
+
+  .inner-content-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .about-content-container {
+    gap: 1rem;
+  }
+
+  .profile-picture {
+    height: 17.5rem;
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 441px) and (max-width: 540px) {
+  .about-content-container {
+    gap: 1.25rem;
+  }
+
+  .profile-picture {
+    height: 17.5rem;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 640px) {
+  .about-content-container {
+    gap: 1.5rem;
+  }
+
+  .profile-picture {
+    height: 20rem;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 720px) {
+  .about-content-container {
+    gap: 1.75rem;
+  }
+
+  .profile-picture {
+    height: 20rem;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 840px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .inner-content-text {
+    font-size: 1.4rem;
+  }
+
+  .profile-picture {
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 841px) and (max-width: 920px) {
+  .about-title {
+    font-size: 2.25rem;
+  }
+
+  .inner-content-text {
+    font-size: 1.45rem;
+  }
+
+  .profile-picture {
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 921px) and (max-width: 1080px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .inner-content-text {
+    font-size: 1.5rem;
+  }
+
+  .profile-picture {
+    height: 22rem;
+  }
+}
