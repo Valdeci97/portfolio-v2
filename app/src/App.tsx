@@ -2,6 +2,7 @@ import Header from './components/Header';
 import SocialMedia from './components/SocialMedia';
 import Home from './pages/Home';
 import About from './pages/About';
+import Projects from './pages/Projects';
 import { useWindowWidth } from './hooks/useWindowWidth';
 import './styles/app.css';
 
@@ -16,6 +17,7 @@ export default function App() {
         <main className="main-container">
           <Home />
           <About />
+          <Projects />
         </main>
       </div>
     </>
