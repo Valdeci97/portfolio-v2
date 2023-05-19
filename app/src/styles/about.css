@@ -39,7 +39,6 @@
 
 @media screen and (max-width: 720px) {
   .about-container {
-    /* background-color: blue; */
     height: unset;
     min-height: 100vh;
   }
