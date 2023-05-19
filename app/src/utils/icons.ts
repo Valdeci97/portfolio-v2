@@ -1,18 +1,26 @@
 import { SVGProps } from '../@types/SVGProps';
 
+const SVG_XLMNS_URL = 'http://www.w3.org/2000/svg';
+const SVG_WIDTH_HEIGHT = '24';
+const SVG_VIEW_BOX = '0 0 24 24';
+const SVG_FILL_NONE = 'none';
+const SVG_STROKE = '#000';
+const SVG_STROKE_WIDTH = '2';
+const SVG_LINE_CAP_JOIN = 'round';
+
 export const icons: SVGProps[] = [
   {
     url: 'https://github.com/Valdeci97',
     svg: {
-      xlmns: 'http://www.w3.org/2000/svg',
-      width: '24',
-      height: '24',
-      viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: '#000',
-      strokeWidth: '2',
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
+      xlmns: SVG_XLMNS_URL,
+      width: SVG_WIDTH_HEIGHT,
+      height: SVG_WIDTH_HEIGHT,
+      viewBox: SVG_VIEW_BOX,
+      fill: SVG_FILL_NONE,
+      stroke: SVG_STROKE,
+      strokeWidth: SVG_STROKE_WIDTH,
+      strokeLinecap: SVG_LINE_CAP_JOIN,
+      strokeLinejoin: SVG_LINE_CAP_JOIN,
       className: 'lucide lucide-github',
       title: 'Github',
       paths: [
@@ -24,15 +32,15 @@ export const icons: SVGProps[] = [
   {
     url: 'https://www.instagram.com/valdeci97/',
     svg: {
-      xlmns: 'http://www.w3.org/2000/svg',
-      width: '24',
-      height: '24',
-      viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: '#000',
-      strokeWidth: '2',
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
+      xlmns: SVG_XLMNS_URL,
+      width: SVG_WIDTH_HEIGHT,
+      height: SVG_WIDTH_HEIGHT,
+      viewBox: SVG_VIEW_BOX,
+      fill: SVG_FILL_NONE,
+      stroke: SVG_STROKE,
+      strokeWidth: SVG_STROKE_WIDTH,
+      strokeLinecap: SVG_LINE_CAP_JOIN,
+      strokeLinejoin: SVG_LINE_CAP_JOIN,
       className: 'lucide lucide-instagram',
       title: 'Instagram',
       rect: [{ width: '20', height: '20', x: '2', y: '2', rx: '5', ry: '5' }],
@@ -43,15 +51,15 @@ export const icons: SVGProps[] = [
   {
     url: 'https://www.linkedin.com/in/valdeci97/',
     svg: {
-      xlmns: 'http://www.w3.org/2000/svg',
-      width: '24',
-      height: '24',
-      viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: '#000',
-      strokeWidth: '2',
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
+      xlmns: SVG_XLMNS_URL,
+      width: SVG_WIDTH_HEIGHT,
+      height: SVG_WIDTH_HEIGHT,
+      viewBox: SVG_VIEW_BOX,
+      fill: SVG_FILL_NONE,
+      stroke: SVG_STROKE,
+      strokeWidth: SVG_STROKE_WIDTH,
+      strokeLinecap: SVG_LINE_CAP_JOIN,
+      strokeLinejoin: SVG_LINE_CAP_JOIN,
       className: 'lucide lucide-linkedin',
       title: 'Linkedin',
       rect: [{ width: '4', height: '12', x: '2', y: '9' }],
