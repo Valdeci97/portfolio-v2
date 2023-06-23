@@ -11,6 +11,8 @@
 .project-card-image-container {
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-left-radius: var(--default-border-radius);
+  border-top-right-radius: var(--default-border-radius);
   display: flex;
   justify-content: center;
   height: 20rem;
