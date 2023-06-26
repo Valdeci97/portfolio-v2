@@ -82,6 +82,10 @@
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  width: 100%;
+}
+
+.mid-width {
   width: 50%;
 }
 

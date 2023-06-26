@@ -8,6 +8,8 @@ type Card = { project: ProjectCardProps };
 
 export default function ProjectCard({ project }: Card) {
   const svgClass = 'project-card-svg';
+  const hasBothOptionalProjectProperties =
+    project.demo && project.important ? 'mid-width' : '';
 
   return (
     <div className="project-card-container">
@@ -35,7 +37,9 @@ export default function ProjectCard({ project }: Card) {
         </ul>
         <div className="project-card-special-info">
           {project.demo && (
-            <div className="project-info-container">
+            <div
+              className={`project-info-container ${hasBothOptionalProjectProperties}`}
+            >
               <h2 className="project-demo-title">Conta demo</h2>
               <p className="project-demo-content">
                 E-mail: {project.demo.email}
@@ -46,7 +50,9 @@ export default function ProjectCard({ project }: Card) {
             </div>
           )}
           {project.important && (
-            <div className="project-info-container">
+            <div
+              className={`project-info-container ${hasBothOptionalProjectProperties}`}
+            >
               <h2 className="project-important-title">Importante</h2>
               <p className="project-important-content">{project.important}</p>
             </div>

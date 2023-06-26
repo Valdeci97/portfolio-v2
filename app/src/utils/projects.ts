@@ -22,6 +22,7 @@ export const projects: ProjectProps[] = [
       'RTL/Jest',
       'Docker',
     ],
+    demo: { email: 'demo@account.com', password: '12345Ab*' },
   },
   {
     id: 2,
@@ -41,6 +42,7 @@ export const projects: ProjectProps[] = [
       'Mocha',
       'Docker',
     ],
+    demo: { email: 'demo@account.com', password: '12345Ab*' },
   },
   {
     id: 3,
@@ -52,7 +54,6 @@ export const projects: ProjectProps[] = [
     description:
       'API para gerenciamento de usuários e tarefas do dia a dia. Listagem de tarefas com base em filtros de datas e tarefas atrasadas.',
     technologies: ['Node.js', 'Typescript', 'MongoDb', 'Jest', 'Docker'],
-    demo: { email: 'Teste', password: 'supersenha' },
     important:
       'Essa Api está hospedada de forma gratuita. Isso implica em seu desligamento de tempos em tempos, o primeiro acesso pode demorar um pouco por conta disso.',
   },
