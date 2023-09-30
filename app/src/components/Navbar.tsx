@@ -24,7 +24,7 @@ export default function Navbar() {
           ))}
         </div>
         <a
-          href="/valdeci-moura-fullstack.pdf"
+          href="/valdeci_moura_fullstack.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="navbar-link-common navbar-resume-link"

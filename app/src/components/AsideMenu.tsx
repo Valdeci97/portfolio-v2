@@ -17,7 +17,7 @@ export default function AsideMenu({ menuProps }: AsideMenuProps) {
           </a>
         ))}
         <a
-          href="/valdeci-moura-fullstack.pdf"
+          href="/valdeci_moura_fullstack.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="aside-menu-link resume-link"
